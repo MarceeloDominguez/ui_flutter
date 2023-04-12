@@ -125,8 +125,21 @@ class _ImageCard extends StatelessWidget {
   }
 }
 
-class _IconFooter extends StatelessWidget {
+class _IconFooter extends StatefulWidget {
   const _IconFooter({super.key});
+
+  @override
+  State<_IconFooter> createState() => _IconFooterState();
+}
+
+class _IconFooterState extends State<_IconFooter> {
+  bool _active = false;
+
+  void _handleFavorite() {
+    setState(() {
+      _active = !_active;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -138,46 +151,50 @@ class _IconFooter extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
-            children: const [
-              Icon(
-                Icons.favorite_border,
-                size: 21,
+            children: [
+              GestureDetector(
+                onTap: _handleFavorite,
+                child: Icon(
+                  Icons.favorite,
+                  size: 21,
+                  color: _active ? Colors.red : Colors.grey,
+                ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 5,
               ),
-              Text(
+              const Text(
                 '528',
                 style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 12,
               ),
-              Icon(
+              const Icon(
                 Icons.sms_outlined,
                 size: 19,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 5,
               ),
-              Text(
+              const Text(
                 '20',
                 style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 12,
               ),
-              Icon(
+              const Icon(
                 Icons.send_outlined,
                 size: 19,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 5,
               ),
             ],
