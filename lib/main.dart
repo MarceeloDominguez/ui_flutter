@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:ui_app/screens/bottom_fab.dart';
+//import 'package:ui_app/screens/bottom_navigation_bar.dart';
 //import 'package:ui_app/screens/grid_card.dart';
 //import 'package:ui_app/screens/widget_card.dart';
-import 'package:ui_app/screens/card_1.dart';
+//import 'package:ui_app/screens/card_1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: GridCard(),
       //home: CardItem(),
-      home: CardUno(),
+      //home: CardUno(),
+      //home: BottomTab(),
+      home: BottomFAB(),
     );
   }
 }
