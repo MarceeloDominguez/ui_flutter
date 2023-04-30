@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_app/screens/onboarding_indocator.dart';
 //import 'package:ui_app/screens/bottom_fab.dart';
 //import 'package:ui_app/screens/bottom_navigation_bar.dart';
 //import 'package:ui_app/screens/grid_card.dart';
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
       //home: BottomTab(),
       //home: BottomFAB(),
       //home: DetailsScreen(),
-      home: PruebaDetails(),
+      //home: PruebaDetails(),
+      home: OnboardingIndocator(),
     );
   }
 }

@@ -19,7 +19,6 @@ class AppButton extends StatelessWidget {
     this.icon,
     required this.isIcon,
   });
-
   @override
   Widget build(BuildContext context) {
     return Container(
