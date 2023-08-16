@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:ui_app/screens/card_travel.dart';
 import 'package:ui_app/screens/onboarding_indocator.dart';
 //import 'package:ui_app/screens/bottom_fab.dart';
 //import 'package:ui_app/screens/bottom_navigation_bar.dart';
 //import 'package:ui_app/screens/grid_card.dart';
 //import 'package:ui_app/screens/widget_card.dart';
 //import 'package:ui_app/screens/card_1.dart';
-//import 'package:ui_app/screens/datails_screen.dart';
-import 'package:ui_app/screens/prueba_details.dart';
+// import 'package:ui_app/screens/datails_screen.dart';
+// import 'package:ui_app/screens/prueba_details.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
       //home: BottomFAB(),
       //home: DetailsScreen(),
       //home: PruebaDetails(),
-      home: OnboardingIndocator(),
+      //home: OnboardingIndocator(),
+      home: CardTravel(),
     );
   }
 }
